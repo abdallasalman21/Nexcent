@@ -1,0 +1,23 @@
+.btn-g-out {
+  color: var(--green-color);
+  background-color: transparent;
+}
+.btn-g {
+  background-color: var(--green-color);
+  color: white;
+  border-radius: 5px;
+}
+.btn-g:hover{
+    background-color: transparent;
+    border: 1px solid var(--green-dark-color);
+    color: var(--green-dark-color);
+}
+.h-title{
+  color: var(--black-color);
+padding: 6px 0;
+}
+.desc {
+  color: #6e7175;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+}
