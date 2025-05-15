@@ -15,6 +15,7 @@ ul {
   --background-color: #f5f7fa;
   --grayb-text-color: #4d4d4d;
 }
+
 img {
   max-width: 100%;
 }
@@ -36,14 +37,13 @@ img {
 .header .navbar-nav .nav-item .nav-link:hover {
   color: var(--green-color);
 }
-@media (max-width:991px) {
-    .header .nav-login{
-        width: fit-content;
-    }
-     .header .nav-sign {
-        width: fit-content;
-    }
-
+@media (max-width: 991px) {
+  .header .nav-login {
+    width: fit-content;
+  }
+  .header .nav-sign {
+    width: fit-content;
+  }
 }
 .header .nav-login {
   color: var(--green-color);
@@ -74,10 +74,10 @@ img {
 }
 .insights .content {
   text-align: left;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
-  gap: 40px;
+  /* gap: 40px; */
   /* flex-wrap: wrap; */
 }
 @media (min-width: 350px) {
@@ -108,26 +108,26 @@ img {
 .insights .ins-right {
   width: 100%;
   /* position: absolute; */
-  animation: move-up 900ms 5s linear infinite ;
-  transition: ease-in-out;
-}
-@keyframes move-up {
-    0%{
-        transform: translateY(-10px);
-    }
-    50%{
-        transform: translateY(-20px);
-
-    }
-    100%{
-        transform: translateY(-5px);
-    }
-
+  animation: move-up 900ms 5s linear infinite;
+  transition: all 0.5s ease-in-out;
+  /* text-align: end; */
 }
 .insights .ins-right img {
-  height: 350px;
+  height: 407px;
   max-width: 100%;
 }
+@keyframes move-up {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
 .insights .bullets {
   display: flex;
   gap: 8px;
@@ -204,7 +204,7 @@ img {
 .client-cards .cl-card {
   border: solid 0.04px #a9a8a830;
   text-align: center;
-  transition: ease-in-out;
+  transition: all 0.5s ease-in-out;
   border-radius: 14px;
 }
 .client-cards .cl-card:hover {
@@ -391,11 +391,11 @@ img {
   font-size: 17px;
   font-weight: 500;
   color: var(--green-color);
-  transition: ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .land-right-button .btn svg {
   padding-left: 2px;
-  transition: ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .land-right-button .btn:hover {
   color: var(--green-dark-color);
@@ -434,9 +434,15 @@ img {
 
 .m-card {
   position: relative;
+  transition: all 0.5s ease-in-out;
+  width: fit-content;
+ padding: 0 !important;
+}
+.m-card img {
 }
 .m-card:hover {
-  scale: 1.007;
+  transform: scale(1.007);
+  box-shadow: 0 1px 20px 1px rgba(54, 54, 54, 0.501);
 }
 .mc-content {
   background-color: var(--background-color);
@@ -459,11 +465,11 @@ img {
   font-size: 17px;
   font-weight: 500;
   color: var(--green-color);
-  transition: ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .mc-button .btn svg {
   padding-left: 2px;
-  transition: ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .mc-button .btn:hover {
   color: var(--green-dark-color);
@@ -517,11 +523,11 @@ img {
   font-size: 17px;
   font-weight: 500;
   /* color: var(--green-color); */
-  transition: ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .demo .demo-content .demo-btn svg {
   padding-left: 2px;
-  transition: ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .demo .demo-content .demo-btn:hover {
   color: var(--green-dark-color);
@@ -622,9 +628,9 @@ footer label:where(:hover, :focus-within) .text-icon {
     align-self: center;
     justify-self: center;
   }
-    .foot-content .col{
-        width: 100%;
-        border-bottom: 0.5px solid var(--green-dark2-color);
-    }
+  .foot-content .col {
+    width: 100%;
+    border-bottom: 0.5px solid var(--green-dark2-color);
+  }
 }
 /* end footer  */
